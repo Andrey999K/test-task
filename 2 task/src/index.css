@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'MontserratLight';
+  src: local('Montserrat'),
+  url('./fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+  url('./fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Montserrat'),
+  url('./fonts/Inter/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'InterMedium';
+  src: local('Inter'),
+  url('./fonts/Inter/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'InterBold';
+  src: local('Inter'),
+  url('./fonts/Inter/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'InterExtraBold';
+  src: local('Inter'),
+  url('./fonts/Inter/Inter-ExtraBold.ttf') format('truetype');
+}
+
+:root {
+  --text-white: #E4E5EA;
+  --text-gray: #656566;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #E4E5EA;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 50px;
+}

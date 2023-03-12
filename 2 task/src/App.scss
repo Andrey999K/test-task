@@ -1,0 +1,182 @@
+.App {
+  min-height: 100vh;
+  background: #0E1014 url("./img/bg.png") no-repeat;
+  background-position-x: 50%;
+}
+
+.main {
+  margin-top: 94px;
+}
+
+.banner {
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 362px;
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+
+    span {
+      font-family: "InterExtraBold", sans-serif;
+      font-weight: 900;
+      background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__short-description {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 275px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    max-width: 305px;
+  }
+
+  &__list-title {
+    text-align: end;
+    font-family: "InterMedium", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+    span {
+      background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 18px;
+      font-family: "InterBold", sans-serif;
+    }
+  }
+
+  &__list {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      &-name {
+        font-family: "InterMedium", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-align: right;
+      }
+
+      &-description {
+        margin-top: 6px;
+        text-align: end;
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .banner__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner__title {
+    font-size: 36px;
+  }
+
+  .banner__short-description {
+    margin-top: 15px;
+  }
+
+  .banner__right {
+    margin-top: 45px;
+    align-items: start;
+  }
+
+  .banner__list-title {
+    text-align: start;
+
+    span {
+      text-transform: none;
+    }
+  }
+
+  .banner__list-item {
+    align-items: start;
+  }
+
+  .banner__list-item-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .banner__list-item-description {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 0 16px;
+    max-width: 320px;
+  }
+
+  .main {
+    margin-top: 0;
+  }
+
+  .banner {
+    padding: 40px 0 60px;
+    background: url("./img/bg-mobile.jpg") no-repeat center/contain;
+  }
+
+  .banner__list {
+    margin-top: 20px;
+    column-gap: 10px;
+    row-gap: 14px;
+
+    &-item {
+      padding-left: 15px;
+      background: url("./img/line.svg") no-repeat;
+      background-position-y: center;
+
+      &-name {
+        text-align: start;
+      }
+    }
+  }
+
+  .banner__button {
+    display: none;
+  }
+
+}
